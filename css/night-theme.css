@@ -1,0 +1,71 @@
+.night-theme__btn {
+  right: 10px;
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: rgb(168, 167, 167);
+  transition: background-color 0.3s, filter 0.4s;
+}
+
+.night-theme__btn:hover {
+  filter: brightness(90%);
+}
+
+.night-theme__btn:active {
+  filter: brightness(110%);
+}
+
+.night-theme-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.night-theme-icon_sun path {
+  fill: rgb(143, 131, 4);
+}
+
+.night-theme-icon_sun circle {
+  fill: rgb(108, 108, 8);
+}
+
+.night-theme-icon_moon {
+  opacity: 1;
+}
+
+body {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.night-theme {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+body.night-theme .card,
+body.night-theme .card-basket,
+body.night-theme .emptyList {
+  background-color: #474747;
+}
+
+body.night-theme .night-theme__btn {
+  background-color: rgb(44, 44, 44);
+}
+
+body.night-theme .night-theme-icon_moon {
+  opacity: 0;
+}
+
+body.night-theme .night-theme-icon_sun {
+  opacity: 1;
+}

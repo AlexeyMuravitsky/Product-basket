@@ -1,1 +1,2 @@
-# Product-basket
+Демонстрация:
+https://alexeymuravitsky.github.io/Product-basket/
